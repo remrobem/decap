@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  #name: git-gateway
+  name: proxy
   branch: dev # Branch to update (optional; defaults to master)
+  proxy_url: http://localhost:8081/api/v1
+
 media_folder: public/img
 public_folder: img
 collections:
