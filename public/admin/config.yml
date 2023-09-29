@@ -1,7 +1,10 @@
 backend:
+  ##  run fom netlify and for prod
   #name: git-gateway
+  #branch: main
+  ## run local using npx netlify-cms-proxy-server
   name: proxy
-  branch: dev # Branch to update (optional; defaults to master)
+  branch: dev
   proxy_url: http://localhost:8081/api/v1
 
 media_folder: public/img
